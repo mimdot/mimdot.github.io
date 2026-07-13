@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-80f738df-0c7c-4a4a-bf4e-16a5df2803d0/styles.css">
+<script src="_ds/modernist-80f738df-0c7c-4a4a-bf4e-16a5df2803d0/_ds_bundle.js"></script>
+<style>
+body{margin:0;background:var(--color-bg)}
+:root{
+--color-accent:#1d4ed8;--color-accent-2:#4a6fd8;
+--color-accent-100:#eff4ff;--color-accent-200:#dbe6fe;--color-accent-300:#bfd3fe;--color-accent-400:#93b4fd;
+--color-accent-500:#3b6ef6;--color-accent-600:#1d4ed8;--color-accent-700:#1a3fae;--color-accent-800:#1e3a8a;--color-accent-900:#172a54;
+}
+a{color:var(--color-accent-700)}a:hover{color:var(--color-accent)}
+</style>
+</helmet>
+
+<div style="min-height: 100vh; display: grid; grid-template-columns: 380px 1fr; max-width: 1440px; margin: 0 auto;" data-screen-label="Homepage">
+
+  <!-- left rail -->
+  <aside style="border-right: 2px solid var(--color-divider); padding: 56px 44px 64px; display: flex; flex-direction: column; align-self: stretch;">
+    <figure class="grayscale" style="margin: 0 0 32px;">
+      <div style="width: 100%; aspect-ratio: 1 / 1;">
+        <image-slot id="portrait-home" shape="rect" placeholder="Drop your portrait here"></image-slot>
+      </div>
+    </figure>
+    <h1 style="font-family: var(--font-heading); font-weight: 800; font-size: 34px; line-height: 1.1; letter-spacing: -0.015em; margin: 0 0 0 -0.058em;">Mohammad Reza Nasirzadeh</h1>
+    <p style="font-size: 13px; line-height: 20px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 18px 0 0;">Independent researcher · Astrophysics</p>
+    <p style="font-size: 15px; line-height: 26px; color: color-mix(in srgb, var(--color-text) 78%, transparent); margin: 24px 0 0;">
+      Magnetic fields in the interstellar medium — radio polarimetry, Faraday tomography,
+      and radio continuum emission in nearby galaxies. Formerly at the IPM School of Astronomy, Tehran.
+    </p>
+    <hr style="height: 2px; border: 0; background: var(--color-divider); margin: 32px 0;">
+    <div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px; line-height: 24px;">
+      <a href="mailto:mrezanasirzadeh@ipm.ir" style="color: var(--color-text); text-decoration: none; border-bottom: 2px solid var(--color-divider); padding-bottom: 10px;">Email — mrezanasirzadeh@ipm.ir</a>
+      <a href="https://github.com/mimdot" style="color: var(--color-text); text-decoration: none; border-bottom: 2px solid var(--color-divider); padding-bottom: 10px;">GitHub — mimdot</a>
+      <a href="#" style="color: var(--color-text); text-decoration: none; border-bottom: 2px solid var(--color-divider); padding-bottom: 10px;">Google Scholar</a>
+      <a href="#" style="color: var(--color-text); text-decoration: none; border-bottom: 2px solid var(--color-divider); padding-bottom: 10px;">ORCID</a>
+    </div>
+    <a href="#" class="btn btn-primary btn-block" style="margin-top: 32px; text-decoration: none;">Download CV (PDF)</a>
+  </aside>
+
+  <!-- right column -->
+  <main style="padding: 56px 56px 64px;">
+
+    <!-- research -->
+    <section>
+      <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--color-divider); padding-bottom: 14px; margin-bottom: 28px;">
+        <h2 style="font-family: var(--font-heading); font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.01em; margin: 0;">Research</h2>
+        <span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);">01</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div style="padding: 0 32px 28px 0; border-right: 2px solid var(--color-divider);">
+          <p style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 10px;">Current — with GMIMS</p>
+          <h3 style="font-family: var(--font-heading); font-weight: 800; font-size: 18px; line-height: 24px; margin: 0;">Faraday tomography of the Perseus molecular cloud</h3>
+          <p style="font-size: 14.5px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 75%, transparent); margin: 10px 0 0;">Magnetic fields in a star-forming cloud, traced through Faraday rotation. Supervised by Dr.&nbsp;Mehrnoosh Tahani, University of South Carolina.</p>
+        </div>
+        <div style="padding: 0 0 28px 32px;">
+          <p style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 10px;">Published</p>
+          <h3 style="font-family: var(--font-heading); font-weight: 800; font-size: 18px; line-height: 24px; margin: 0;">Radio–IR correlation in IC 342</h3>
+          <p style="font-size: 14.5px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 75%, transparent); margin: 10px 0 0;">Where my research began — cosmic ray propagation probed through thermal/non-thermal separation in a nearby galaxy.</p>
+        </div>
+        <div style="padding: 28px 32px 0 0; border-top: 2px solid var(--color-divider); border-right: 2px solid var(--color-divider);">
+          <p style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 10px;">Contribution</p>
+          <h3 style="font-family: var(--font-heading); font-weight: 800; font-size: 18px; line-height: 24px; margin: 0;">HII regions in M33</h3>
+          <p style="font-size: 14.5px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 75%, transparent); margin: 10px 0 0;">Contributing to a team study of radio continuum emission and SED fitting in the Triangulum Galaxy.</p>
+        </div>
+        <div style="padding: 28px 0 0 32px; border-top: 2px solid var(--color-divider);">
+          <p style="font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700); margin: 0 0 10px;">Interests</p>
+          <p style="font-size: 14.5px; line-height: 24px; color: color-mix(in srgb, var(--color-text) 75%, transparent); margin: 0;">Radio–infrared correlation · cosmic ray propagation · multi-tracer correlation methods · star formation in galactic and extragalactic environments.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- publications -->
+    <section style="margin-top: 56px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--color-divider); padding-bottom: 14px; margin-bottom: 4px;">
+        <h2 style="font-family: var(--font-heading); font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.01em; margin: 0;">Publications</h2>
+        <span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);">02</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; gap: 6px 24px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);">
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: 800; font-size: 16.5px; line-height: 24px; margin: 0;">Radio–FIR correlation: a probe into cosmic ray propagation in IC 342</p>
+          <p style="font-size: 13.5px; line-height: 22px; color: color-mix(in srgb, var(--color-text) 65%, transparent); margin: 4px 0 0;">Nasirzadeh, M. R., et al. — <em>Astronomy &amp; Astrophysics</em> · <a href="#" style="color: var(--color-accent-700);">DOI</a> · <a href="#" style="color: var(--color-accent-700);">PDF</a></p>
+        </div>
+        <span class="tag tag-accent">Published</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; gap: 6px 24px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);">
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: 800; font-size: 16.5px; line-height: 24px; margin: 0;">Faraday tomography of the Perseus molecular cloud with GMIMS</p>
+          <p style="font-size: 13.5px; line-height: 22px; color: color-mix(in srgb, var(--color-text) 65%, transparent); margin: 4px 0 0;">Nasirzadeh, M. R., Tahani, M., et al.</p>
+        </div>
+        <span class="tag tag-outline">In preparation</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr auto; gap: 6px 24px; align-items: baseline; padding: 18px 0;">
+        <div>
+          <p style="font-family: var(--font-heading); font-weight: 800; font-size: 16.5px; line-height: 24px; margin: 0;">Radio continuum emission and SED fitting of HII regions in M33</p>
+          <p style="font-size: 13.5px; line-height: 22px; color: color-mix(in srgb, var(--color-text) 65%, transparent); margin: 4px 0 0;">Team publication — co-author.</p>
+        </div>
+        <span class="tag tag-outline">In preparation</span>
+      </div>
+    </section>
+
+    <!-- talks -->
+    <section style="margin-top: 56px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--color-divider); padding-bottom: 14px; margin-bottom: 4px;">
+        <h2 style="font-family: var(--font-heading); font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.01em; margin: 0;">Talks &amp; conferences</h2>
+        <span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);">03</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 64px 1fr auto; gap: 0 24px;">
+        <p style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; line-height: 22px; margin: 0; padding: 14px 0; font-feature-settings: 'tnum' 1;">2024</p>
+        <p style="font-size: 15px; line-height: 22px; margin: 0; padding: 14px 0;">Radio–FIR correlation in IC 342 — <span style="color: color-mix(in srgb, var(--color-text) 65%, transparent);">COMRAD2024, Pisa</span></p>
+        <span class="tag tag-neutral" style="align-self: center;">Poster</span>
+        <p style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent); font-feature-settings: 'tnum' 1;">2023</p>
+        <p style="font-size: 15px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);">Radio–IR correlation in IC 342 — <span style="color: color-mix(in srgb, var(--color-text) 65%, transparent);">16th National Conf. on Astronomy &amp; Astrophysics of Iran</span></p>
+        <span style="border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);"></span>
+        <p style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent); font-feature-settings: 'tnum' 1;">2023</p>
+        <p style="font-size: 15px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);">LOFAR LoTSS resolved radio–IR correlation in nearby galaxies — <span style="color: color-mix(in srgb, var(--color-text) 65%, transparent);">SPARCS XI</span></p>
+        <span class="tag tag-neutral" style="align-self: center;">Poster</span>
+        <p style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent); font-feature-settings: 'tnum' 1;">2021</p>
+        <p style="font-size: 15px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);">Wavelet &amp; thermal/non-thermal separation in IC 342 — <span style="color: color-mix(in srgb, var(--color-text) 65%, transparent);">LOFAR MKSP annual meeting</span></p>
+        <span style="border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);"></span>
+        <p style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent); font-feature-settings: 'tnum' 1;">2021</p>
+        <p style="font-size: 15px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);">Magnetic fields in IC 342 — <span style="color: color-mix(in srgb, var(--color-text) 65%, transparent);">OAC talk, IPM, Tehran</span></p>
+        <span style="border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);"></span>
+        <p style="font-family: var(--font-heading); font-weight: 800; font-size: 14px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent); font-feature-settings: 'tnum' 1;">2020</p>
+        <p style="font-size: 15px; line-height: 22px; margin: 0; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);">Study of the radio–IR correlation in IC 342 — <span style="color: color-mix(in srgb, var(--color-text) 65%, transparent);">LOFAR MKSP &amp; IPM research seminar</span></p>
+        <span style="border-top: 1px solid color-mix(in srgb, var(--color-divider) 40%, transparent);"></span>
+      </div>
+    </section>
+
+    <!-- writings -->
+    <section style="margin-top: 56px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--color-divider); padding-bottom: 14px; margin-bottom: 20px;">
+        <h2 style="font-family: var(--font-heading); font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.01em; margin: 0;">Writings &amp; translations</h2>
+        <span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);">04</span>
+      </div>
+      <p style="font-size: 15px; line-height: 26px; color: color-mix(in srgb, var(--color-text) 75%, transparent); margin: 0; max-width: 60ch;">
+        Essays on science, culture, and the human condition; translations of scientific and literary texts
+        from English into Persian.
+      </p>
+      <p style="font-size: 15.5px; line-height: 26px; margin: 20px 0 0;">
+        <a href="#" style="color: var(--color-accent-700); font-weight: 600;">War / Laughter under the bomb</a>
+        <span style="color: color-mix(in srgb, var(--color-text) 65%, transparent);"> — on dark humor, internet shutdowns, and crisis.</span>
+      </p>
+    </section>
+
+    <!-- contact form -->
+    <section style="margin-top: 56px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 2px solid var(--color-divider); padding-bottom: 14px; margin-bottom: 28px;">
+        <h2 style="font-family: var(--font-heading); font-weight: 800; font-size: 24px; line-height: 28px; letter-spacing: -0.01em; margin: 0;">Contact</h2>
+        <span style="font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--color-accent-700);">05</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px 32px;">
+        <div class="field"><label>Name</label><input class="input" type="text" placeholder="Your name"></div>
+        <div class="field"><label>Email</label><input class="input" type="email" placeholder="your@email.com"></div>
+        <div class="field" style="grid-column: 1 / -1;"><label>Message</label><textarea class="input" rows="4" placeholder="Your message…"></textarea></div>
+        <div><button type="button" class="btn btn-primary" style="white-space: nowrap;">Send message</button></div>
+      </div>
+    </section>
+
+    <p style="margin: 56px 0 0; padding-top: 20px; border-top: 2px solid var(--color-divider); font-size: 13px; line-height: 22px; color: color-mix(in srgb, var(--color-text) 65%, transparent);">© 2026 Mohammad Reza Nasirzadeh · Independent researcher, astrophysics</p>
+
+  </main>
+</div>
+
+<div style="width: 0; height: 0; overflow: hidden;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" hint-size="0,0"></x-import></div>
+</x-dc>
+</body>
+</html>
