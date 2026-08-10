@@ -328,6 +328,25 @@ button { font-family: inherit; }
 textarea.input { min-height: 110px; resize: vertical; }
 .contact-submit { justify-self: start; margin-top: 8px; }
 
+.contact-form-status {
+  max-width: 820px;
+  padding: 14px 16px;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 1px solid var(--on-accent);
+}
+.contact-form-status[hidden] { display: none; }
+.contact-form-status.is-error { border-color: #ffc8c1; color: #ffc8c1; }
+.fs-error {
+  display: block;
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: #ffc8c1;
+  min-height: 0;
+}
+.fs-error[hidden] { display: none; }
+
 /* --- Footer --- */
 .footer {
   background: var(--accent-900);
@@ -440,4 +459,6 @@ textarea.input { min-height: 110px; resize: vertical; }
   .footer { background: #10141a; color: rgba(232,230,225,0.6); }
   .input { color: #16191d; background: #f2ecdd; }
   .nav-toggle span { background: var(--ink); }
+  .contact-form-status.is-error,
+  .fs-error { border-color: #4f1414; color: #4f1414; }
 }

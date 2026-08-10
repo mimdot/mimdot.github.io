@@ -208,20 +208,26 @@
       <a href="assets/CV_Nasirzadeh.pdf" class="btn btn-ghost on-navy">Download CV (PDF)</a>
     </div>
     <hr class="contact-rule">
-    <form class="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+    <div class="contact-form-status" data-fs-success hidden>Thanks, I'll get back to you soon.</div>
+    <div class="contact-form-status is-error" data-fs-error hidden></div>
+
+    <form class="contact-form" id="contact-form" action="https://formspree.io/f/mzepeogo" method="POST">
       <div class="field">
         <label for="name">Name</label>
-        <input class="input" type="text" id="name" name="name" placeholder="Your name" required>
+        <input class="input" type="text" id="name" name="name" placeholder="Your name" required data-fs-field>
+        <span class="fs-error" data-fs-error="name"></span>
       </div>
       <div class="field">
         <label for="email">Email</label>
-        <input class="input" type="email" id="email" name="email" placeholder="your@email.com" required>
+        <input class="input" type="email" id="email" name="email" placeholder="your@email.com" required data-fs-field>
+        <span class="fs-error" data-fs-error="email"></span>
       </div>
       <div class="field field-full">
         <label for="message">Message</label>
-        <textarea class="input" rows="4" id="message" name="message" placeholder="Your message&hellip;" required></textarea>
+        <textarea class="input" rows="4" id="message" name="message" placeholder="Your message&hellip;" required data-fs-field></textarea>
+        <span class="fs-error" data-fs-error="message"></span>
       </div>
-      <button type="submit" class="btn btn-ghost on-navy contact-submit">Send message</button>
+      <button type="submit" class="btn btn-ghost on-navy contact-submit" data-fs-submit-btn>Send message</button>
     </form>
   </div>
 </section>
@@ -230,6 +236,11 @@
   <p>&copy; 2026 Mohammad Reza Nasirzadeh &middot; Independent researcher, astrophysics</p>
 </footer>
 
+<script>
+  window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+  formspree('initForm', { formElement: '#contact-form', formId: 'mzepeogo' });
+</script>
+<script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
