@@ -1,8 +1,8 @@
 /* ============================================================
    mimdot.github.io - Mohammad Reza Nasirzadeh
    Modernist poster system, preserved brand: cream + navy + Archivo
-   Single accent locked: #33567c. Radii: 0. Theme: light with
-   prefers-color-scheme dark.
+   Radii: 0. Default theme cream, light with prefers-color-scheme
+   dark. Alternate colour themes via html[data-theme].
    ============================================================ */
 
 /* --- Tokens --- */
@@ -19,6 +19,8 @@
   --accent-900:#182a3e;
   --divider:   #d3ccbb;
   --on-accent: #faf5e9;
+  --field-bg: #faf5e9;
+  --field-ink: #201e1d;
   --font: 'Archivo', system-ui, sans-serif;
   --nav-h: 64px;
   --max: 1120px;
@@ -87,8 +89,8 @@ button { font-family: inherit; }
   background: var(--bg);
   border-bottom: 2px solid var(--divider);
 }
-.nav-logo { width: 40px; height: 40px; flex: none; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-.nav-logo img { width: 154px; max-width: none; flex: none; }
+.nav-logo { width: 40px; height: 40px; flex: none; display: flex; align-items: center; justify-content: center; }
+.nav-logo img { width: 40px; height: 40px; max-width: none; flex: none; object-fit: contain; }
 .nav-brand {
   font-weight: 800;
   font-size: 17px;
@@ -135,17 +137,12 @@ button { font-family: inherit; }
   margin: 0 auto;
   padding: 96px 56px 84px;
 }
-.hero-title {
-  font-weight: 800;
-  font-size: 54px;
-  line-height: 1.08;
-  letter-spacing: -0.02em;
-  margin-bottom: 32px;
-}
-.hero-intro {
-  font-size: 17px;
-  line-height: 1.65;
-  max-width: 54ch;
+.hero-lead {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+  max-width: 34ch;
   margin-bottom: 32px;
 }
 .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -186,10 +183,6 @@ button { font-family: inherit; }
   margin-bottom: 42px;
   border-bottom: 2px solid var(--divider);
 }
-.feature-row-image {
-  grid-template-columns: minmax(0, 1fr) 320px;
-  align-items: start;
-}
 .feature-row:last-of-type { margin-bottom: 0; padding-bottom: 24px; }
 .feature-title {
   font-weight: 800;
@@ -203,14 +196,6 @@ button { font-family: inherit; }
   line-height: 1.8;
   color: var(--ink-soft);
   max-width: 52ch;
-}
-.feature-figure { margin-bottom: 8px; }
-.feature-figure img { border: 2px solid var(--divider); }
-.feature-figure figcaption {
-  font-size: 12.5px;
-  line-height: 1.6;
-  margin-top: 8px;
-  color: var(--ink-faint);
 }
 
 /* --- Publications --- */
@@ -317,8 +302,8 @@ button { font-family: inherit; }
   padding: 10px 12px;
   font-family: var(--font);
   font-size: 14px;
-  color: var(--ink);
-  background: var(--on-accent);
+  color: var(--field-ink);
+  background: var(--field-bg);
   border: 1px solid rgba(250,245,233,0.5);
   border-radius: 0;
   caret-color: var(--accent);
@@ -360,7 +345,6 @@ textarea.input { min-height: 110px; resize: vertical; }
 /* --- Responsive --- */
 @media (max-width: 1024px) {
   .hero { grid-template-columns: minmax(0, 1fr) 280px; gap: 40px; }
-  .feature-row-image { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
@@ -388,13 +372,11 @@ textarea.input { min-height: 110px; resize: vertical; }
   .container, .hero, .contact .container { padding-left: 24px; padding-right: 24px; }
   .hero { grid-template-columns: 1fr; gap: 32px; padding-top: 56px; padding-bottom: 56px; text-align: left; }
   .hero-figure { max-width: 340px; }
-  .hero-title { font-size: 40px; }
+  .hero-lead { font-size: 20px; max-width: 38ch; }
   .contact-title { font-size: 40px; }
 
   .section { padding: 56px 0; }
   .section-title { font-size: 28px; margin-bottom: 32px; }
-
-  .feature-row-image { grid-template-columns: 1fr; }
 
   .pub-row { grid-template-columns: auto 1fr; grid-template-rows: auto auto; }
   .pub-year { grid-column: 1; }
@@ -448,6 +430,8 @@ textarea.input { min-height: 110px; resize: vertical; }
     --accent-900:#14202c;
     --divider:   #33383f;
     --on-accent: #10141a;
+    --field-bg:  #f2ecdd;
+    --field-ink: #16191d;
   }
   .contact { color: var(--bg); }
   .contact .contact-title { color: var(--bg); }
@@ -456,9 +440,147 @@ textarea.input { min-height: 110px; resize: vertical; }
   .btn-primary { color: var(--bg); }
   .btn-ghost.on-navy { color: var(--bg); border-color: var(--bg); }
   .btn-ghost.on-navy:hover { background: rgba(16,20,26,0.12); color: var(--bg); }
-  .footer { background: #10141a; color: rgba(232,230,225,0.6); }
-  .input { color: #16191d; background: #f2ecdd; }
+  .footer { background: var(--accent-900); color: rgba(232,230,225,0.6); }
+  .input { color: var(--field-ink); background: var(--field-bg); }
   .nav-toggle span { background: var(--ink); }
   .contact-form-status.is-error,
   .fs-error { border-color: #4f1414; color: #4f1414; }
 }
+
+/* --- Colour themes --- */
+html[data-theme="slate"] {
+  --bg: #eef2f5;
+  --surface: #e2e9ee;
+  --ink: #1b2a33;
+  --ink-soft: #465b66;
+  --ink-faint: #51636d;
+  --accent: #1f6f78;
+  --accent-600: #1a5f67;
+  --accent-700: #17525a;
+  --accent-800: #13454b;
+  --accent-900: #0f383e;
+  --divider: #c6d2d8;
+  --on-accent: #eef2f5;
+  --field-bg: #f6f9fb;
+  --field-ink: #1b2a33;
+}
+html[data-theme="wine"] {
+  --bg: #faf3ea;
+  --surface: #f3e7d6;
+  --ink: #2b211a;
+  --ink-soft: #6d5a46;
+  --ink-faint: #73614e;
+  --accent: #7a2e3d;
+  --accent-600: #692634;
+  --accent-700: #59202d;
+  --accent-800: #4a1a25;
+  --accent-900: #3b151d;
+  --divider: #ddcdb6;
+  --on-accent: #faf3ea;
+  --field-bg: #fdf8f0;
+  --field-ink: #2b211a;
+}
+html[data-theme="forest"] {
+  --bg: #f1f5ec;
+  --surface: #e5ecdc;
+  --ink: #222a1e;
+  --ink-soft: #57613f;
+  --ink-faint: #5f6b49;
+  --accent: #3f5d3b;
+  --accent-600: #375133;
+  --accent-700: #2f462c;
+  --accent-800: #273924;
+  --accent-900: #1f2d1d;
+  --divider: #ced8bb;
+  --on-accent: #f1f5ec;
+  --field-bg: #f6f9f1;
+  --field-ink: #222a1e;
+}
+
+@media (prefers-color-scheme: dark) {
+  html[data-theme="slate"] {
+    --bg: #12191d;
+    --surface: #1a2328;
+    --ink: #e2eaee;
+    --ink-soft: #9fb0b8;
+    --ink-faint: #93a6af;
+    --accent: #4fa7b2;
+    --accent-600: #5db0ba;
+    --accent-700: #6bb9c3;
+    --accent-800: #7ac2cb;
+    --accent-900: #10242a;
+    --divider: #2c3940;
+    --on-accent: #0e1518;
+    --field-bg: #e2e9ee;
+    --field-ink: #1b2a33;
+  }
+  html[data-theme="wine"] {
+    --bg: #1b1410;
+    --surface: #251c15;
+    --ink: #efe6dc;
+    --ink-soft: #bba997;
+    --ink-faint: #ad9c8b;
+    --accent: #c25d6e;
+    --accent-600: #cc6c7c;
+    --accent-700: #d47e8d;
+    --accent-800: #dc929f;
+    --accent-900: #2c1318;
+    --divider: #3d2e26;
+    --on-accent: #140d0a;
+    --field-bg: #f3e7d6;
+    --field-ink: #2b211a;
+  }
+  html[data-theme="forest"] {
+    --bg: #141812;
+    --surface: #1d2219;
+    --ink: #e9eee2;
+    --ink-soft: #a9b49b;
+    --ink-faint: #9da895;
+    --accent: #86a97e;
+    --accent-600: #93b48b;
+    --accent-700: #a1be9a;
+    --accent-800: #afc8a9;
+    --accent-900: #12270f;
+    --divider: #30382a;
+    --on-accent: #0f130c;
+    --field-bg: #e5ecdc;
+    --field-ink: #222a1e;
+  }
+}
+
+/* --- Theme switcher --- */
+.theme-switcher {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--surface);
+  border: 2px solid var(--divider);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.theme-switcher-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-right: 2px;
+}
+.theme-dot {
+  width: 22px;
+  height: 22px;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0;
+  flex: none;
+}
+.theme-dot[aria-pressed="true"] { outline: 2px solid var(--accent); outline-offset: 2px; }
+.theme-dot[data-theme-name="cream"]  { background: #33567c; }
+.theme-dot[data-theme-name="slate"]  { background: #1f6f78; }
+.theme-dot[data-theme-name="wine"]   { background: #7a2e3d; }
+.theme-dot[data-theme-name="forest"] { background: #3f5d3b; }

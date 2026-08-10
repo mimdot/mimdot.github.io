@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cream">
 <head>
 <meta charset="utf-8">
+<script>
+  try { document.documentElement.dataset.theme = localStorage.getItem('mimdot-theme') || 'cream'; } catch (e) {}
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mohammad Reza Nasirzadeh - Astrophysicist</title>
-<meta name="description" content="Personal academic website of Mohammad Reza Nasirzadeh, astrophysicist specialising in magnetic fields in the interstellar medium, Faraday tomography, and radio continuum emission.">
+<meta name="description" content="Personal academic website of Mohammad Reza Nasirzadeh, an astrophysicist student with research interests in radio astronomy, the interstellar medium, magnetic fields, cosmic-ray propagation, and Faraday tomography.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mohammad Reza Nasirzadeh - Astrophysicist">
-<meta property="og:description" content="Personal academic website of Mohammad Reza Nasirzadeh, astrophysicist specialising in magnetic fields in the interstellar medium, Faraday tomography, and radio continuum emission.">
+<meta property="og:description" content="Astrophysicist student with research interests in radio astronomy, the interstellar medium, magnetic fields, cosmic-ray propagation, and Faraday tomography.">
 <meta property="og:url" content="https://mimdot.github.io/">
 <meta property="og:image" content="https://mimdot.github.io/assets/images/profile.jpg">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mohammad Reza Nasirzadeh - Astrophysicist">
-<meta name="twitter:description" content="Magnetic fields in the interstellar medium, Faraday tomography, and radio continuum emission.">
+<meta name="twitter:description" content="Radio astronomy, the interstellar medium, magnetic fields, cosmic-ray propagation, and Faraday tomography.">
 <link rel="icon" href="assets/images/logo.png">
 <link rel="stylesheet" href="assets/css/style.css">
 <script type="application/ld+json">
@@ -23,7 +26,7 @@
   "url": "https://mimdot.github.io/",
   "email": "mailto:mrezanasirzadeh@ipm.ir",
   "identifier": "https://orcid.org/0009-0003-5291-9174",
-  "jobTitle": "Independent researcher in astrophysics",
+  "jobTitle": "Astrophysicist student",
   "sameAs": [
     "https://orcid.org/0009-0003-5291-9174",
     "https://github.com/mimdot"
@@ -68,8 +71,8 @@
 
 <header class="hero">
   <div class="hero-body">
-    <h1 class="hero-title">Mapping magnetic fields<br>in the space between stars.</h1>
-    <p class="hero-intro">I am an independent researcher in astrophysics, mapping magnetic fields in the interstellar medium with radio polarimetry and Faraday tomography.</p>
+    <p class="eyebrow">Radio astronomy &middot; Interstellar medium &middot; Magnetic fields</p>
+    <h1 class="hero-lead">Astrophysicist student with research interests in radio astronomy, the interstellar medium, magnetic fields, cosmic-ray propagation, and Faraday tomography. My work focuses on multiwavelength analysis of molecular clouds and galaxy-scale emission using radio, infrared, and polarization data. I am also interested in data analysis, signal processing, and observational methods for studying magnetized astrophysical environments.</h1>
     <div class="hero-ctas">
       <a href="mailto:mrezanasirzadeh@ipm.ir" class="btn btn-primary">Email me</a>
       <a href="https://orcid.org/0009-0003-5291-9174" class="btn btn-ghost">ORCID</a>
@@ -93,15 +96,11 @@
       </div>
     </div>
 
-    <div class="feature-row feature-row-image">
+    <div class="feature-row">
       <div class="feature-text">
         <h3 class="feature-title">Radio-IR correlation in IC 342</h3>
         <p class="feature-body">Where my research began: separating thermal and non-thermal radio emission in the nearby galaxy IC 342 to probe how cosmic rays propagate. Published in Astronomy &amp; Astrophysics.</p>
       </div>
-      <figure class="feature-figure">
-        <img src="assets/images/fig-ic342.jpg" alt="IC 342, radio-IR correlation" width="1400" height="1400">
-        <figcaption>IC 342: radio-IR correlation.</figcaption>
-      </figure>
     </div>
 
     <div class="feature-row" style="border-bottom: 2px solid var(--divider); padding-bottom: 42px;">
@@ -136,12 +135,12 @@
     </div>
 
     <div class="pub-row">
-      <span class="pub-year">In prep</span>
+      <span class="pub-year">Submitted</span>
       <div>
         <h3 class="pub-title">Radio continuum emission and SED fitting of HII regions in M33</h3>
         <p class="pub-authors">Team publication, co-author.</p>
       </div>
-      <span class="tag tag-outline">In preparation</span>
+      <span class="tag tag-outline">Submitted</span>
     </div>
   </section>
 
@@ -233,8 +232,16 @@
 </section>
 
 <footer class="footer">
-  <p>&copy; 2026 Mohammad Reza Nasirzadeh &middot; Independent researcher, astrophysics</p>
+  <p>&copy; 2026 Mohammad Reza Nasirzadeh &middot; Astrophysicist student, radio astronomy &amp; the interstellar medium</p>
 </footer>
+
+<nav class="theme-switcher" id="theme-switcher" aria-label="Colour theme">
+  <span class="theme-switcher-label">Theme</span>
+  <button type="button" class="theme-dot" data-theme-name="cream" aria-pressed="true" title="Cream &amp; navy" aria-label="Cream and navy theme"></button>
+  <button type="button" class="theme-dot" data-theme-name="slate" aria-pressed="false" title="Slate &amp; teal" aria-label="Slate and teal theme"></button>
+  <button type="button" class="theme-dot" data-theme-name="wine" aria-pressed="false" title="Wine &amp; ochre" aria-label="Wine and ochre theme"></button>
+  <button type="button" class="theme-dot" data-theme-name="forest" aria-pressed="false" title="Forest &amp; sage" aria-label="Forest and sage theme"></button>
+</nav>
 
 <script>
   window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };

@@ -24,4 +24,25 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
+
+  // Colour theme switcher
+  const switcher = document.getElementById('theme-switcher');
+  const dots = switcher ? switcher.querySelectorAll('.theme-dot') : [];
+
+  function applyTheme(name) {
+    document.documentElement.dataset.theme = name;
+    try { localStorage.setItem('mimdot-theme', name); } catch (e) {}
+    dots.forEach(function (dot) {
+      dot.setAttribute('aria-pressed', String(dot.dataset.themeName === name));
+    });
+  }
+
+  if (switcher && dots.length) {
+    applyTheme(document.documentElement.dataset.theme || 'cream');
+    dots.forEach(function (dot) {
+      dot.addEventListener('click', function () {
+        applyTheme(dot.dataset.themeName);
+      });
+    });
+  }
 });
