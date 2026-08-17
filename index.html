@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="cream">
+<html lang="en" data-theme="wine">
 <head>
 <meta charset="utf-8">
 <script>
-  try { document.documentElement.dataset.theme = localStorage.getItem('mimdot-theme') || 'cream'; } catch (e) {}
+  try { document.documentElement.dataset.theme = localStorage.getItem('mimdot-theme') || 'wine'; } catch (e) {}
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mohammad Reza Nasirzadeh - Astrophysicist</title>
@@ -18,6 +18,7 @@
 <meta name="twitter:description" content="Radio astronomy, the interstellar medium, magnetic fields, cosmic-ray propagation, and Faraday tomography.">
 <link rel="icon" href="assets/images/logo.png">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/poster.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -58,7 +59,6 @@
   <ul class="nav-links" id="nav-links">
     <li><a href="#research">Research</a></li>
     <li><a href="#publications">Publications</a></li>
-    <li><a href="#talks">Talks</a></li>
     <li><a href="#writings">Writings</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -69,132 +69,146 @@
   </button>
 </nav>
 
-<header class="hero">
-  <div class="hero-body">
-    <p class="eyebrow">Radio astronomy &middot; Interstellar medium &middot; Magnetic fields</p>
-    <h1 class="hero-lead">Astrophysicist student with research interests in radio astronomy, the interstellar medium, magnetic fields, cosmic-ray propagation, and Faraday tomography. My work focuses on multiwavelength analysis of molecular clouds and galaxy-scale emission using radio, infrared, and polarization data. I am also interested in data analysis, signal processing, and observational methods for studying magnetized astrophysical environments.</h1>
-    <div class="hero-ctas">
-      <a href="mailto:mrezanasirzadeh@ipm.ir" class="btn btn-primary">Email me</a>
-      <a href="https://orcid.org/0009-0003-5291-9174" class="btn btn-ghost">ORCID</a>
-      <a href="https://github.com/mimdot" class="btn btn-ghost">GitHub</a>
+<header>
+  <div class="p-wrap">
+    <div class="p-masthead">
+      <div>
+        <p class="p-kicker">Radio astronomy &middot; Interstellar medium &middot; Magnetic fields</p>
+        <h1 class="p-name">M. R.<br>Nasirzadeh</h1>
+      </div>
+      <img class="p-portrait" src="assets/images/profile.jpg" alt="Portrait of Mohammad Reza Nasirzadeh" width="640" height="800">
+    </div>
+    <hr class="p-rule">
+    <div class="p-lead-sec">
+      <p class="p-lead">Astrophysicist student with research interests in radio astronomy, the interstellar medium, magnetic fields, cosmic-ray propagation, and Faraday tomography. My work focuses on multiwavelength analysis of molecular clouds and galaxy-scale emission using radio, infrared, and polarization data. I am also interested in data analysis, signal processing, and observational methods for studying magnetized astrophysical environments.</p>
+      <div class="p-ctas">
+        <a href="mailto:mrezanasirzadeh@ipm.ir" class="btn btn-primary">Email me</a>
+        <a href="https://orcid.org/0009-0003-5291-9174" class="btn btn-ghost">ORCID</a>
+        <a href="https://github.com/mimdot" class="btn btn-ghost">GitHub</a>
+      </div>
     </div>
   </div>
-  <figure class="hero-figure">
-    <img src="assets/images/profile.jpg" alt="Portrait of Mohammad Reza Nasirzadeh" width="640" height="640">
-  </figure>
 </header>
 
-<main class="container">
+<section class="p-band">
+  <div class="p-wrap">
+    <p class="p-band-label">Current work</p>
+    <h2>Faraday tomography of the Perseus molecular cloud</h2>
+    <p>Tracing magnetic fields in and around a star-forming cloud through Faraday rotation, with the GMIMS international team. Supervised by Dr.&nbsp;Mehrnoosh Tahani, University of South Carolina.</p>
+  </div>
+</section>
 
-  <section class="section" id="research">
-    <h2 class="section-title">Research</h2>
+<main>
 
-    <div class="feature-row">
-      <div class="feature-text">
-        <h3 class="feature-title">Faraday tomography of the Perseus molecular cloud</h3>
-        <p class="feature-body">Tracing magnetic fields in and around a star-forming cloud through Faraday rotation, with the GMIMS international team. Supervised by Dr.&nbsp;Mehrnoosh Tahani, University of South Carolina.</p>
+  <section class="p-sec" id="research">
+    <div class="p-wrap">
+      <h2 class="p-label">Research</h2>
+      <div class="p-two">
+        <div class="p-item">
+          <h3>Radio-IR correlation in IC 342</h3>
+          <p>Where my research began: separating thermal and non-thermal radio emission in the nearby galaxy IC 342 to probe how cosmic rays propagate. Published in Astronomy &amp; Astrophysics.</p>
+        </div>
+        <div class="p-item">
+          <h3>HII regions in M33, contributing scientist</h3>
+          <p>Contributing to a team study of radio continuum emission and SED fitting of HII regions in the Triangulum Galaxy.</p>
+        </div>
       </div>
-    </div>
-
-    <div class="feature-row">
-      <div class="feature-text">
-        <h3 class="feature-title">Radio-IR correlation in IC 342</h3>
-        <p class="feature-body">Where my research began: separating thermal and non-thermal radio emission in the nearby galaxy IC 342 to probe how cosmic rays propagate. Published in Astronomy &amp; Astrophysics.</p>
-      </div>
-    </div>
-
-    <div class="feature-row" style="border-bottom: 2px solid var(--divider); padding-bottom: 42px;">
-      <div class="feature-text">
-        <h3 class="feature-title">HII regions in M33, contributing scientist</h3>
-        <p class="feature-body">Contributing to a team study of radio continuum emission and SED fitting of HII regions in the Triangulum Galaxy.</p>
-      </div>
-    </div>
-
-  </section>
-
-  <section class="section" id="publications">
-    <h2 class="section-title">Publications</h2>
-
-    <div class="pub-row">
-      <span class="pub-year">2024</span>
-      <div>
-        <h3 class="pub-title">Radio-FIR correlation: a probe into cosmic ray propagation in the nearby galaxy IC 342</h3>
-        <p class="pub-authors">Nasirzadeh, M. R., Tabatabaei, F. S., Beck, R., Heesen, V., et al. - <em>Astronomy &amp; Astrophysics</em></p>
-        <p class="pub-links"><a href="https://doi.org/10.1051/0004-6361/202451110">DOI</a></p>
-      </div>
-      <span class="tag tag-accent">Published</span>
-    </div>
-
-    <div class="pub-row">
-      <span class="pub-year">In prep</span>
-      <div>
-        <h3 class="pub-title">Faraday tomography of the Perseus molecular cloud with GMIMS</h3>
-        <p class="pub-authors">Nasirzadeh, M. R., Tahani, M., et al.</p>
-      </div>
-      <span class="tag tag-outline">In preparation</span>
-    </div>
-
-    <div class="pub-row">
-      <span class="pub-year">Submitted</span>
-      <div>
-        <h3 class="pub-title">Radio continuum emission and SED fitting of HII regions in M33</h3>
-        <p class="pub-authors">Team publication, co-author.</p>
-      </div>
-      <span class="tag tag-outline">Submitted</span>
     </div>
   </section>
 
-  <section class="section" id="talks">
-    <h2 class="section-title">Talks &amp; conferences</h2>
+  <section class="p-sec" id="publications">
+    <div class="p-wrap">
+      <h2 class="p-label">Publications</h2>
 
-    <div class="talk-row">
-      <span class="talk-year">2024</span>
-      <p class="talk-title">Radio-FIR correlation in IC 342 - <span class="talk-venue">COMRAD2024, Pisa, Italy</span></p>
-      <span class="tag tag-neutral">Poster</span>
-    </div>
+      <div class="p-pub">
+        <div>
+          <span class="p-pub-year">2024</span>
+          <span class="p-stamp">Published</span>
+        </div>
+        <div>
+          <h3>Radio-FIR correlation: a probe into cosmic ray propagation in the nearby galaxy IC 342</h3>
+          <p class="p-pub-authors">Nasirzadeh, M. R., Tabatabaei, F. S., Beck, R., Heesen, V., et al. &mdash; <em>Astronomy &amp; Astrophysics</em></p>
+          <a class="p-pub-doi" href="https://doi.org/10.1051/0004-6361/202451110">DOI</a>
+        </div>
+      </div>
 
-    <div class="talk-row">
-      <span class="talk-year">2023</span>
-      <p class="talk-title">Radio-IR correlation in IC 342 - <span class="talk-venue">16th National Conference on Astronomy &amp; Astrophysics of Iran</span></p>
-    </div>
+      <div class="p-pub">
+        <div>
+          <span class="p-pub-year is-small">In prep</span>
+          <span class="p-stamp is-outline">In preparation</span>
+        </div>
+        <div>
+          <h3>Faraday tomography of the Perseus molecular cloud with GMIMS</h3>
+          <p class="p-pub-authors">Nasirzadeh, M. R., Tahani, M., et al.</p>
+        </div>
+      </div>
 
-    <div class="talk-row">
-      <span class="talk-year">2023</span>
-      <p class="talk-title">LOFAR LoTSS resolved radio-IR correlation in nearby galaxies - <span class="talk-venue">SPARCS XI</span></p>
-      <span class="tag tag-neutral">Poster</span>
-    </div>
-
-    <div class="talk-row">
-      <span class="talk-year">2021</span>
-      <p class="talk-title">Radio-IR correlation in IC 342: wavelet and thermal/non-thermal separation - <span class="talk-venue">LOFAR MKSP annual meeting</span></p>
-    </div>
-
-    <div class="talk-row">
-      <span class="talk-year">2021</span>
-      <p class="talk-title">Magnetic fields in IC 342 - <span class="talk-venue">OAC talk, IPM, Tehran</span></p>
-    </div>
-
-    <div class="talk-row">
-      <span class="talk-year">2020</span>
-      <p class="talk-title">Study of the radio-IR correlation in IC 342 - <span class="talk-venue">LOFAR MKSP annual meeting &amp; IPM research seminar</span></p>
-    </div>
-  </section>
-
-  <section class="section section-split" id="writings">
-    <div>
-      <p class="eyebrow">Beyond the data</p>
-      <h2 class="section-title">Writings &amp; translations</h2>
-      <p class="writings-intro">Alongside research, I write essays on science, culture, and the human condition, and translate scientific and literary texts from English into Persian.</p>
-      <p class="writings-entry">
-        <a href="https://medium.com/@mrnasirzadehm111/war-laughter-under-the-bombs-e9246ecd0d96">War / Laughter under the bomb</a><br>
-        <span class="writings-desc">On dark humor, internet shutdowns, and crisis, a personal essay.</span>
-      </p>
+      <div class="p-pub">
+        <div>
+          <span class="p-pub-year is-small">Submitted</span>
+          <span class="p-stamp is-outline">Submitted</span>
+        </div>
+        <div>
+          <h3>Radio continuum emission and SED fitting of HII regions in M33</h3>
+          <p class="p-pub-authors">Team publication, co-author.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="section" id="projects">
-    <h2 class="section-title">My personal projects</h2>
-    <p class="projects-intro">I will add my personal projects here soon.</p>
+  <section class="p-sec" id="writings">
+    <div class="p-wrap">
+      <div class="p-split">
+        <div>
+          <p class="p-kicker">Beyond the data</p>
+          <h2>Writings &amp;<br>translations</h2>
+        </div>
+        <div>
+          <p class="p-body">Alongside research, I write essays on science, culture, and the human condition, and translate scientific and literary texts from English into Persian.</p>
+          <div class="p-entry">
+            <a href="https://medium.com/@mrnasirzadehm111/war-laughter-under-the-bombs-e9246ecd0d96">War / Laughter under the bomb</a>
+            <span>On dark humor, internet shutdowns, and crisis, a personal essay.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-sec" id="projects">
+    <div class="p-wrap">
+      <div class="p-sec-head">
+        <h2>My personal projects</h2>
+        <p>Software I build and maintain in the open.</p>
+      </div>
+
+      <div class="p-card">
+        <div class="p-card-inner">
+          <div class="p-card-tile">
+            <svg class="p-mark" viewBox="0 0 100 100" width="62" height="62" fill="none" role="img" aria-label="Astra">
+              <line x1="14" y1="80" x2="48" y2="34" stroke="currentColor" stroke-width="7"/>
+              <line x1="48" y1="34" x2="87" y2="53" stroke="currentColor" stroke-width="7"/>
+              <rect x="0" y="66" width="28" height="28" fill="currentColor"/>
+              <rect x="74" y="40" width="26" height="26" fill="currentColor"/>
+              <rect class="keystone" x="32" y="18" width="32" height="32"/>
+            </svg>
+          </div>
+          <div class="p-card-body">
+            <div class="p-card-head">
+              <span class="p-wordmark">Astra</span>
+              <span class="p-tagline">Your academic constellation</span>
+              <span class="p-meta">Python &middot; Next.js &middot; MIT</span>
+            </div>
+            <p class="p-descriptor">Positions and supervisors in academia</p>
+            <p class="p-memo">Astra finds academic positions and supervisors &mdash; PhD openings, postdocs, funded programmes and the people running them &mdash; and keeps the search on your own machine.</p>
+            <div class="p-ctas">
+              <a href="projects/astra/" class="btn btn-primary">Open the project page &rarr;</a>
+              <a href="https://github.com/mimdot/CIK/archive/refs/heads/main.zip" class="btn btn-ghost">Download the code (.zip)</a>
+              <a href="https://github.com/mimdot/CIK" class="btn btn-ghost">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
 </main>
@@ -237,9 +251,9 @@
 
 <nav class="theme-switcher" id="theme-switcher" aria-label="Colour theme">
   <span class="theme-switcher-label">Theme</span>
-  <button type="button" class="theme-dot" data-theme-name="cream" aria-pressed="true" title="Cream &amp; navy" aria-label="Cream and navy theme"></button>
+  <button type="button" class="theme-dot" data-theme-name="cream" aria-pressed="false" title="Cream &amp; navy" aria-label="Cream and navy theme"></button>
   <button type="button" class="theme-dot" data-theme-name="slate" aria-pressed="false" title="Slate &amp; teal" aria-label="Slate and teal theme"></button>
-  <button type="button" class="theme-dot" data-theme-name="wine" aria-pressed="false" title="Wine &amp; ochre" aria-label="Wine and ochre theme"></button>
+  <button type="button" class="theme-dot" data-theme-name="wine" aria-pressed="true" title="Wine &amp; sand" aria-label="Wine and sand theme"></button>
   <button type="button" class="theme-dot" data-theme-name="forest" aria-pressed="false" title="Forest &amp; sage" aria-label="Forest and sage theme"></button>
 </nav>
 

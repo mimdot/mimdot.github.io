@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="wine">
+<head>
+<meta charset="utf-8">
+<script>
+  try { document.documentElement.dataset.theme = localStorage.getItem('mimdot-theme') || 'wine'; } catch (e) {}
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Astra - positions and supervisors in academia &middot; M. R. Nasirzadeh</title>
+<meta name="description" content="Astra finds academic positions and supervisors - PhD openings, postdocs, funded programmes and the people running them - and keeps the search on your own machine.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Astra: your academic constellation">
+<meta property="og:description" content="Astra finds academic positions and supervisors - PhD openings, postdocs, funded programmes and the people running them - and keeps the search on your own machine.">
+<meta property="og:url" content="https://mimdot.github.io/projects/astra/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Astra: your academic constellation">
+<meta name="twitter:description" content="Positions and supervisors in academia. Free, MIT-licensed, and it runs on your own machine.">
+<link rel="icon" href="../../assets/images/logo.png">
+<link rel="stylesheet" href="../../assets/css/style.css">
+<link rel="stylesheet" href="../../assets/css/poster.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Astra",
+  "alternateName": "Career Intelligence Kit",
+  "description": "Astra finds academic positions and supervisors - PhD openings, postdocs, funded programmes and the people running them - and keeps the search on your own machine.",
+  "applicationCategory": "ResearchApplication",
+  "operatingSystem": "Linux, macOS, Windows",
+  "url": "https://mimdot.github.io/projects/astra/",
+  "downloadUrl": "https://github.com/mimdot/CIK/archive/refs/heads/main.zip",
+  "codeRepository": "https://github.com/mimdot/CIK",
+  "license": "https://opensource.org/licenses/MIT",
+  "isAccessibleForFree": true,
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "author": {
+    "@type": "Person",
+    "name": "Mohammad Reza Nasirzadeh",
+    "url": "https://mimdot.github.io/"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="p-wrap">
+  <nav class="p-crumbs" aria-label="Breadcrumb">
+    <a href="../../">&larr; M. R. Nasirzadeh</a>
+    <span>Projects / Astra</span>
+    <a class="p-crumbs-end" href="https://github.com/mimdot/CIK">Source on GitHub &rarr;</a>
+  </nav>
+
+  <header class="p-hero">
+    <div class="p-mark-tile">
+      <svg class="p-mark" viewBox="0 0 100 100" width="90" height="90" fill="none" role="img" aria-label="Astra">
+        <line x1="14" y1="80" x2="48" y2="34" stroke="currentColor" stroke-width="7"/>
+        <line x1="48" y1="34" x2="87" y2="53" stroke="currentColor" stroke-width="7"/>
+        <rect x="0" y="66" width="28" height="28" fill="currentColor"/>
+        <rect x="74" y="40" width="26" height="26" fill="currentColor"/>
+        <rect class="keystone" x="32" y="18" width="32" height="32"/>
+      </svg>
+    </div>
+    <div>
+      <p class="p-kicker">Positions and supervisors in academia</p>
+      <div class="p-hero-lockup">
+        <h1>Astra</h1>
+        <span class="p-tagline">Your academic constellation</span>
+      </div>
+      <p class="p-hero-memo">Astra finds academic positions and supervisors &mdash; PhD openings, postdocs, funded programmes and the people running them &mdash; and keeps the search on your own machine.</p>
+      <p class="p-facts">
+        <span>MIT licence</span>
+        <span>Python 3.11+</span>
+        <span>11 field profiles</span>
+        <span>Offline-capable</span>
+      </p>
+    </div>
+  </header>
+</div>
+
+<section class="p-band">
+  <div class="p-wrap">
+    <div class="p-get">
+      <div>
+        <p class="p-band-label">Get it</p>
+        <div class="p-ctas">
+          <a class="btn btn-ghost on-navy p-btn-lg" href="https://github.com/mimdot/CIK/archive/refs/heads/main.zip">&darr; Download the code (.zip)</a>
+          <a class="btn btn-ghost on-navy p-btn-lg" href="https://github.com/mimdot/CIK/releases/latest">Installers &mdash; latest release</a>
+        </div>
+        <p class="p-get-note" style="margin-top: 18px">The .zip is the current <strong>main</strong> branch straight from GitHub &mdash; no account, no build server. Desktop installers (.AppImage, .deb, .rpm, .dmg, .exe) live on the release page.</p>
+      </div>
+      <div>
+        <p class="p-band-label">Or clone and run</p>
+        <pre class="p-code">git clone https://github.com/mimdot/CIK.git
+cd CIK
+./run.sh</pre>
+        <p class="p-code-note" style="margin-top: 12px">Builds whatever is missing, then launches.</p>
+        <p class="p-code-rule">Desktop app sign-in is your email plus the shared access code <strong>1819</strong>. It is a front door, not a security boundary.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+
+  <section class="p-sec">
+    <div class="p-wrap">
+      <div class="p-aside">
+        <div>
+          <h2 class="p-label">What it does</h2>
+          <p class="p-hero-memo" style="font-weight: 400">Academic openings are scattered across faculty pages, mailing lists and PDF calls. Astra collects them, matches them to your field and stage, and shows you who supervises what &mdash; so the search becomes a shortlist you can act on.</p>
+        </div>
+        <dl class="p-defs">
+          <div class="p-def"><dt>Positions</dt><dd>From academic job boards, deduplicated and freshness-filtered.</dd></div>
+          <div class="p-def"><dt>Supervisors</dt><dd>Ranked by an explainable 0&ndash;100 fit, from NASA ADS, OpenAlex and arXiv.</dd></div>
+          <div class="p-def"><dt>Scored to your field</dt><dd>An editable per-field keyword taxonomy.</dd></div>
+          <div class="p-def"><dt>Saved items</dt><dd>Survive a re-crawl, with notes and an application status.</dd></div>
+          <div class="p-def"><dt>Yours alone</dt><dd>CV parsing stays local by default, and nothing is sent to a third party without opt-in.</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-sec">
+    <div class="p-wrap">
+      <h2 class="p-label">Three ways to run it</h2>
+      <div class="p-three">
+        <div>
+          <h3>Astra CLI</h3>
+          <p>The aggregator and supervisor finder. Writes CSV, JSON and a self-contained HTML report.</p>
+          <code class="p-inline-code">python phd_aggregator.py</code>
+        </div>
+        <div>
+          <h3>Astra Dashboard</h3>
+          <p>The local web app: a Next.js frontend on a FastAPI backend, both on localhost.</p>
+          <code class="p-inline-code">uvicorn api.app:app</code>
+        </div>
+        <div>
+          <h3>Astra Desktop</h3>
+          <p>The packaged app: a Tauri shell with the engine and its Python runtime bundled. Works offline.</p>
+          <code class="p-inline-code">./run.sh</code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-sec">
+    <div class="p-wrap">
+      <div class="p-aside">
+        <div>
+          <h2 class="p-label">Fields supported today</h2>
+          <p class="p-hero-memo" style="font-weight: 400; max-width: 54ch">Eleven field profiles ship with Astra. A profile is the editable knowledge for a subject &mdash; its anchor terms, context terms, negative terms and weights &mdash; and it decides which boards a run visits and how every result is scored.</p>
+          <p class="p-note" style="max-width: 54ch">Your subject missing? Adding one is a single YAML file and no Python: <code>python phd_aggregator.py --new-field marine_biology</code> scaffolds it from a commented template.</p>
+        </div>
+        <div class="p-list">
+          <p class="p-list-head">11 profiles</p>
+          <ul>
+            <li>Astronomy</li>
+            <li>Physics</li>
+            <li>Condensed matter</li>
+            <li>Mathematics</li>
+            <li>Chemistry</li>
+            <li>Biology</li>
+            <li>Computer science</li>
+            <li>Engineering</li>
+            <li>Economics</li>
+            <li>Geology</li>
+            <li>Geophysics and hydrology</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-sec">
+    <div class="p-wrap">
+      <div class="p-sec-head">
+        <h2 class="p-label" style="margin: 0">What comes next</h2>
+        <p>Planned, in roughly this order. None of it is shipped yet.</p>
+      </div>
+      <div class="p-road">
+        <div class="p-road-item">
+          <span class="p-road-num">01</span>
+          <div>
+            <h3>Master's programmes as a live position type</h3>
+            <p>Funded master's calls searched and scored alongside PhD and postdoc positions.</p>
+          </div>
+        </div>
+        <div class="p-road-item">
+          <span class="p-road-num">02</span>
+          <div>
+            <h3>More listing sources</h3>
+            <p>New boards and faculty feeds in the engine, so a run covers more of what is actually posted.</p>
+          </div>
+        </div>
+        <div class="p-road-item">
+          <span class="p-road-num">03</span>
+          <div>
+            <h3>A wider field taxonomy</h3>
+            <p>More disciplines and finer subfields, so matching gets sharper outside the sciences already covered.</p>
+          </div>
+        </div>
+        <div class="p-road-item">
+          <span class="p-road-num">04</span>
+          <div>
+            <h3>A scholarships crawler</h3>
+            <p>Funding calls and deadlines for the twenty most common destination countries.</p>
+          </div>
+        </div>
+        <div class="p-road-item">
+          <span class="p-road-num">05</span>
+          <div>
+            <h3>A scientific events crawler</h3>
+            <p>Seminars, conferences and online events, with their registration and abstract deadlines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="p-sec">
+    <div class="p-wrap">
+      <div class="p-split">
+        <div>
+          <h2 class="p-label">Which download</h2>
+          <div class="p-table-scroll">
+          <table class="p-table">
+            <thead>
+              <tr><th scope="col">Surface</th><th scope="col">Linux</th><th scope="col">macOS</th><th scope="col">Windows</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">CLI</th><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+              <tr><th scope="row">Dashboard</th><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+              <tr><th scope="row">Desktop</th><td>Tested</td><td>Untested</td><td>Untested</td></tr>
+            </tbody>
+          </table>
+          </div>
+          <p class="p-note">The CLI and the dashboard run anywhere Python 3.11+ does. The desktop installers are built for all three platforms by CI from the same source, but so far only run on Ubuntu &mdash; if you try one, please open an issue.</p>
+        </div>
+        <div>
+          <h2 class="p-label">No server needed</h2>
+          <p class="p-body" style="color: inherit; margin-bottom: 20px">A CLI run writes <strong>phd_positions.html</strong> next to its CSV and JSON: one self-contained file with the whole result set, openable from disk and publishable as a static page. This project page is static too, plain HTML on the site stylesheet, with every download a direct GitHub URL.</p>
+          <pre class="p-code">python phd_aggregator.py --field astronomy
+
+phd_positions.csv
+phd_positions.json
+phd_positions.html   # open it in a browser</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<section class="p-ink">
+  <div class="p-wrap">
+    <div class="p-ink-split">
+      <div>
+        <h2>Trying it, or want a field profile for your subject?</h2>
+        <p style="margin-top: 16px">Adding a field is one YAML file and no Python. Bug reports from macOS and Windows are especially welcome. Astra is free and MIT-licensed &mdash; a donation pays for the crawling and keeps the roadmap moving.</p>
+      </div>
+      <div class="p-ink-actions">
+        <a class="p-btn-solid" href="https://github.com/mimdot/CIK/issues">Open an issue</a>
+        <a class="p-btn-outline" href="mailto:mr.nasirzadeh@live.com">mr.nasirzadeh@live.com</a>
+        <a class="p-btn-outline" href="https://donofa.ir/mimdot">Support the project &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="p-wrap">
+  <p class="p-colophon">
+    <span>&copy; 2026 Mohammad Reza Nasirzadeh</span>
+    <span>Astra &mdash; MIT licence</span>
+    <em>Per aspera ad astra</em>
+  </p>
+</div>
+
+<nav class="theme-switcher" id="theme-switcher" aria-label="Colour theme">
+  <span class="theme-switcher-label">Theme</span>
+  <button type="button" class="theme-dot" data-theme-name="cream" aria-pressed="false" title="Cream &amp; navy" aria-label="Cream and navy theme"></button>
+  <button type="button" class="theme-dot" data-theme-name="slate" aria-pressed="false" title="Slate &amp; teal" aria-label="Slate and teal theme"></button>
+  <button type="button" class="theme-dot" data-theme-name="wine" aria-pressed="true" title="Wine &amp; sand" aria-label="Wine and sand theme"></button>
+  <button type="button" class="theme-dot" data-theme-name="forest" aria-pressed="false" title="Forest &amp; sage" aria-label="Forest and sage theme"></button>
+</nav>
+
+<script src="../../assets/js/main.js"></script>
+</body>
+</html>
