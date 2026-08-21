@@ -27,7 +27,7 @@
   "description": "Astra finds academic positions and supervisors - PhD openings, postdocs, funded programmes and the people running them - and keeps the search on your own machine.",
   "applicationCategory": "ResearchApplication",
   "operatingSystem": "Linux, macOS, Windows",
-  "softwareVersion": "1.0.1",
+  "softwareVersion": "1.1.0",
   "url": "https://mimdot.github.io/projects/astra/",
   "downloadUrl": "https://github.com/mimdot/CIK/releases/latest",
   "softwareRequirements": "Python 3.12+",
@@ -71,9 +71,9 @@
       <p class="p-hero-memo">Astra finds academic positions and supervisors &mdash; PhD openings, postdocs, funded programmes and the people running them &mdash; and keeps the search on your own machine.</p>
       <p class="p-facts">
         <span>MIT licence</span>
-        <span>v1.0.1</span>
+        <span>v1.1.0</span>
         <span>Python 3.12+</span>
-        <span>11 field profiles</span>
+        <span>16 field profiles</span>
         <span>Offline-capable</span>
       </p>
     </div>
@@ -86,11 +86,11 @@
       <div>
         <p class="p-band-label">Get it</p>
         <div class="p-ctas">
-          <a class="btn btn-ghost on-navy p-btn-lg" href="https://github.com/mimdot/CIK/releases/latest">&darr; Installers &mdash; v1.0.1</a>
-          <a class="btn btn-ghost on-navy p-btn-lg" href="https://github.com/mimdot/CIK/archive/refs/heads/main.zip">Download the code (.zip)</a>
+          <a class="btn btn-ghost on-navy p-btn-lg" href="https://github.com/mimdot/CIK/releases/latest">&darr; Installers &mdash; v1.1.0</a>
+          <a class="btn btn-ghost on-navy p-btn-lg" href="https://github.com/mimdot/CIK/archive/refs/tags/v1.1.0.zip">Source code (.zip)</a>
         </div>
-        <p class="p-get-note" style="margin-top: 18px">Desktop installers (.AppImage, .deb, .rpm, .dmg, .exe, .msi) live on the release page; the .zip is the current <strong>main</strong> branch straight from GitHub &mdash; no account, no build server.</p>
-        <p class="p-get-note" style="margin-top: 10px">Older builds stay downloadable: <a href="https://github.com/mimdot/CIK/releases/tag/v1.0.1">v1.0.1</a> &middot; <a href="https://github.com/mimdot/CIK/releases/tag/v1.0.0">v1.0.0</a> &middot; <a href="https://github.com/mimdot/CIK/releases">all releases</a>. Every published release keeps its files for good, so a link you have saved will keep working.</p>
+        <p class="p-get-note" style="margin-top: 18px">Desktop installers (.AppImage, .deb, .rpm, .dmg, .exe, .msi) live on the release page; the .zip is the source this exact release was built from &mdash; no account, no build server. For work in progress instead, take the <a href="https://github.com/mimdot/CIK/archive/refs/heads/main.zip">main branch</a>.</p>
+        <p class="p-get-note" style="margin-top: 10px">Older builds stay downloadable: <a href="https://github.com/mimdot/CIK/releases/tag/v1.1.0">v1.1.0</a> &middot; <a href="https://github.com/mimdot/CIK/releases/tag/v1.0.1">v1.0.1</a> &middot; <a href="https://github.com/mimdot/CIK/releases/tag/v1.0.0">v1.0.0</a> &middot; <a href="https://github.com/mimdot/CIK/releases">all releases</a>. Every published release keeps its files for good, so a link you have saved will keep working.</p>
       </div>
       <div>
         <p class="p-band-label">Or clone and run</p>
@@ -115,7 +115,7 @@ cd CIK
         </div>
         <dl class="p-defs">
           <div class="p-def"><dt>Positions</dt><dd>From academic job boards, deduplicated and freshness-filtered.</dd></div>
-          <div class="p-def"><dt>Supervisors</dt><dd>Ranked by an explainable 0&ndash;100 fit, from NASA ADS, OpenAlex and arXiv.</dd></div>
+          <div class="p-def"><dt>Supervisors</dt><dd>Ranked by an explainable 0&ndash;100 fit, from NASA ADS, OpenAlex and arXiv. A search names each candidate as it is verified, can be stopped mid-run, and says so when a source is rate-limiting rather than quietly returning nothing.</dd></div>
           <div class="p-def"><dt>Scored to your field</dt><dd>An editable per-field keyword taxonomy.</dd></div>
           <div class="p-def"><dt>Saved items</dt><dd>Survive a re-crawl, with notes and an application status.</dd></div>
           <div class="p-def"><dt>Yours alone</dt><dd>CV parsing stays local by default, and nothing is sent to a third party without opt-in.</dd></div>
@@ -152,11 +152,11 @@ cd CIK
       <div class="p-aside">
         <div>
           <h2 class="p-label">Fields supported today</h2>
-          <p class="p-hero-memo" style="font-weight: 400; max-width: 54ch">Eleven field profiles ship with Astra. A profile is the editable knowledge for a subject &mdash; its anchor terms, context terms, negative terms and weights &mdash; and it decides which boards a run visits and how every result is scored.</p>
+          <p class="p-hero-memo" style="font-weight: 400; max-width: 54ch">Sixteen field profiles ship with Astra &mdash; five of them new in v1.1.0. A profile is the editable knowledge for a subject &mdash; its anchor terms, context terms, negative terms and weights &mdash; and it decides which boards a run visits and how every result is scored.</p>
           <p class="p-note" style="max-width: 54ch">Your subject missing? Adding one is a single YAML file and no Python: <code>python astra.py --new-field marine_biology</code> scaffolds it from a commented template.</p>
         </div>
         <div class="p-list">
-          <p class="p-list-head">11 profiles</p>
+          <p class="p-list-head">16 profiles</p>
           <ul>
             <li>Astronomy</li>
             <li>Physics</li>
@@ -169,6 +169,11 @@ cd CIK
             <li>Economics</li>
             <li>Geology</li>
             <li>Geophysics and hydrology</li>
+            <li>Neuroscience <span class="p-new">new</span></li>
+            <li>Biomedical sciences <span class="p-new">new</span></li>
+            <li>Environmental science <span class="p-new">new</span></li>
+            <li>Materials science <span class="p-new">new</span></li>
+            <li>Statistics and data science <span class="p-new">new</span></li>
           </ul>
         </div>
       </div>
@@ -179,7 +184,7 @@ cd CIK
     <div class="p-wrap">
       <div class="p-sec-head">
         <h2 class="p-label" style="margin: 0">What comes next</h2>
-        <p>Planned, in roughly this order. None of it is shipped yet.</p>
+        <p>Planned, in roughly this order. The wider taxonomy has started &mdash; five fields landed in v1.1.0; the rest is not shipped yet.</p>
       </div>
       <div class="p-road">
         <div class="p-road-item">
@@ -199,8 +204,8 @@ cd CIK
         <div class="p-road-item">
           <span class="p-road-num">03</span>
           <div>
-            <h3>A wider field taxonomy</h3>
-            <p>More disciplines and finer subfields, so matching gets sharper outside the sciences already covered.</p>
+            <h3>A wider field taxonomy <span class="p-new">started</span></h3>
+            <p>Neuroscience, biomedical sciences, environmental science, materials science and statistics &amp; data science shipped in v1.1.0, taking the taxonomy from 11 to 16. Still to come: the social sciences and humanities, and finer subfields throughout.</p>
           </div>
         </div>
         <div class="p-road-item">
